@@ -1,4 +1,4 @@
-# 视频介绍中的Demo
+﻿# 视频介绍中的Demo
 [视频地址http://www.smobiler.com/video1.aspx](http://www.smobiler.com/video1.aspx)
 
 1. barcode
@@ -14,3 +14,5 @@
 7. signature
 8. smobilerdemo
 9. voicerecorder
+
+下一期视频敬请期待
