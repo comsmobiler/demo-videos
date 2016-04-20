@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signature", "signature\sign
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "voicerecorder", "voicerecorder\voicerecorder.csproj", "{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{47C794A4-8347-4B30-9C0A-13B577E1671C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C794A4-8347-4B30-9C0A-13B577E1671C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C794A4-8347-4B30-9C0A-13B577E1671C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C794A4-8347-4B30-9C0A-13B577E1671C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C794A4-8347-4B30-9C0A-13B577E1671C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
