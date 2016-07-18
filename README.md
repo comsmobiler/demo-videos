@@ -2,6 +2,7 @@
 [视频地址http://www.smobiler.com/video1.aspx](http://www.smobiler.com/video1.aspx)
 
 Video002. chart
+
 	1. barchart
 	2. bubblechart
 	3. linechart
