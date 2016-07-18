@@ -1,18 +1,20 @@
 ﻿# 视频介绍中的Demo
 [视频地址http://www.smobiler.com/video1.aspx](http://www.smobiler.com/video1.aspx)
 
-1. barcode
-2. camera
-3. chart
+Video002. chart
 	1. barchart
 	2. bubblechart
 	3. linechart
-	4. piechart
-4. gridview1
-5. gridview2
-6. phone
-7. signature
-8. smobilerdemo
-9. voicerecorder
+	4. piechartbarcode
+Video003. camera
+Video003. barcode
+Video004. phone
+Video004. voicerecorder
+Video007. GridView1
+Video007. GridView2
+Video008. GPS
+Video009. Signature
+Video012. PushDemo
+
 
 下一期视频敬请期待
