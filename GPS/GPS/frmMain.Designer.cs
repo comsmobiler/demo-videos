@@ -47,7 +47,7 @@ partial class frmMain : System.Windows.Forms.Form
         this.txtTcpPort = new System.Windows.Forms.TextBox();
         this.txtHTTPPort = new System.Windows.Forms.TextBox();
         this.btnSetting = new System.Windows.Forms.Button();
-        this.qrcodeControl = new Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl();
+        this.qrcodeControl = new Smobiler.Utility.Encoding.Windows.Forms.QrCodeImgControl();
         ((System.ComponentModel.ISupportInitialize)(this.qrcodeControl)).BeginInit();
         this.SuspendLayout();
         // 
@@ -148,11 +148,11 @@ partial class frmMain : System.Windows.Forms.Form
         // 
         // qrcodeControl
         // 
-        this.qrcodeControl.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M;
+        this.qrcodeControl.ErrorCorrectLevel = Smobiler.Utility.Encoding.ErrorCorrectionLevel.M;
         this.qrcodeControl.Image = ((System.Drawing.Image)(resources.GetObject("qrcodeControl.Image")));
         this.qrcodeControl.Location = new System.Drawing.Point(21, 130);
         this.qrcodeControl.Name = "qrcodeControl";
-        this.qrcodeControl.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two;
+        this.qrcodeControl.QuietZoneModule = Smobiler.Utility.Encoding.Windows.Render.QuietZoneModules.Two;
         this.qrcodeControl.Size = new System.Drawing.Size(306, 276);
         this.qrcodeControl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         this.qrcodeControl.TabIndex = 7;
@@ -203,5 +203,5 @@ partial class frmMain : System.Windows.Forms.Form
     internal System.Windows.Forms.TextBox txtTcpPort;
     internal System.Windows.Forms.TextBox txtHTTPPort;
     private System.Windows.Forms.Button btnSetting;
-    internal Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl qrcodeControl;
+    internal Smobiler.Utility.Encoding.Windows.Forms.QrCodeImgControl qrcodeControl;
 }

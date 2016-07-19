@@ -7,8 +7,8 @@
     <ProjectGuid>{8EAC90C9-250E-4B79-A366-CE32E3A10EE2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SmobilerUtilityDemo</RootNamespace>
-    <AssemblyName>SmobilerUtilityDemo</AssemblyName>
+    <RootNamespace>SmobilerPushDemo</RootNamespace>
+    <AssemblyName>SmobilerPushDemo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -63,6 +63,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="PushForm.resx">
       <DependentUpon>PushForm.cs</DependentUpon>

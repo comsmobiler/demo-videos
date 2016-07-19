@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "barchart", "chart\barchart\barchart.csproj", "{6C8C1175-EAF5-40CF-A614-D9FC4938C421}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bubblechart", "chart\bubblechart\bubblechart.csproj", "{FCABF710-A587-487D-B93F-C966057A8A20}"
@@ -25,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signature", "signature\sign
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "voicerecorder", "voicerecorder\voicerecorder.csproj", "{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPS", "GPS\SmobilerApplication79\GPS.csproj", "{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmobilerPushDemo", "PushDemo\SmobilerPushDemo.csproj", "{8EAC90C9-250E-4B79-A366-CE32E3A10EE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPS", "GPS\GPS\GPS.csproj", "{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,14 +77,14 @@ Global
 		{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA3FA198-95EA-4745-B1FB-4A53C84A9F66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8EAC90C9-250E-4B79-A366-CE32E3A10EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8EAC90C9-250E-4B79-A366-CE32E3A10EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EAC90C9-250E-4B79-A366-CE32E3A10EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EAC90C9-250E-4B79-A366-CE32E3A10EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -96,13 +96,13 @@ namespace gridview2
             this.label1,
             this.label2,
             this.gridView1});
-            this.TitleBackColor = System.Drawing.Color.GhostWhite;
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("", System.Drawing.Color.GhostWhite, System.Drawing.Color.Black);
             this.TitleText = "Æ«×ªÆ÷·ÑÓÃ";
-            this.TitleTextColor = System.Drawing.Color.Black;
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.save});
             this.Load += new System.EventHandler(this.SmobilerForm1_Load);
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.SmobilerForm1_ToolbarItemClick);
+            this.Name = "SmobilerForm1";
             ((System.ComponentModel.ISupportInitialize)(this.tblDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smobilerDemoCostDataSet)).EndInit();
 

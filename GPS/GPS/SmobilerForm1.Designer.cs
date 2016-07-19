@@ -1,6 +1,6 @@
 using Smobiler.Core;
 
-namespace SmobilerApplication79
+namespace GPS
 {
     partial class SmobilerForm1 : Smobiler.Core.MobileForm
     {
@@ -31,10 +31,12 @@ namespace SmobilerApplication79
             this.components = new System.ComponentModel.Container();
             this.gridView1 = new Smobiler.Core.Controls.GridView();
             this.tblDealerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.smobilerDemoDealerDataSet = new SmobilerApplication79.SmobilerDemoDealerDataSet();
+            this.smobilerDemoDealerDataSet = new GPS.SmobilerDemoDealerDataSet();
             this.ShowPicked = new Smobiler.Core.Controls.ToolbarItem();
-            this.tblDealerTableAdapter = new SmobilerApplication79.SmobilerDemoDealerDataSetTableAdapters.tblDealerTableAdapter();
+            this.tblDealerTableAdapter = new GPS.SmobilerDemoDealerDataSetTableAdapters.tblDealerTableAdapter();
             this.gps1 = new Smobiler.Core.Controls.GPS();
+            this.MyLocation = new Smobiler.Core.Controls.ToolbarItem();
+            this.ShowRoute = new Smobiler.Core.Controls.ToolbarItem();
             this.gps2 = new Smobiler.Core.Controls.GPS();
             ((System.ComponentModel.ISupportInitialize)(this.tblDealerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smobilerDemoDealerDataSet)).BeginInit();
@@ -72,6 +74,18 @@ namespace SmobilerApplication79
             // 
             this.gps1.Name = "gps1";
             // 
+            // MyLocation
+            // 
+            this.MyLocation.IconID = "MyLocation";
+            this.MyLocation.Name = "MyLocation";
+            this.MyLocation.Text = "我的位置";
+            // 
+            // ShowRoute
+            // 
+            this.ShowRoute.IconID = "ShowRoute";
+            this.ShowRoute.Name = "ShowRoute";
+            this.ShowRoute.Text = "显示路径";
+            // 
             // gps2
             // 
             this.gps2.Name = "gps2";
@@ -84,12 +98,15 @@ namespace SmobilerApplication79
             this.gps2});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.gridView1});
-            this.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(78)))), ((int)(((byte)(93)))));
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("", System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(78)))), ((int)(((byte)(93))))), System.Drawing.Color.White);
             this.TitleText = "经销商";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
-            this.ShowPicked});
+            this.ShowPicked,
+            this.MyLocation,
+            this.ShowRoute});
             this.Load += new System.EventHandler(this.SmobilerForm1_Load);
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.SmobilerForm1_ToolbarItemClick);
+            this.Name = "SmobilerForm1";
             ((System.ComponentModel.ISupportInitialize)(this.tblDealerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smobilerDemoDealerDataSet)).EndInit();
 
@@ -100,9 +117,11 @@ namespace SmobilerApplication79
         private Smobiler.Core.Controls.ToolbarItem ShowPicked;
         private System.Windows.Forms.BindingSource tblDealerBindingSource;
         private System.ComponentModel.IContainer components;
-        private SmobilerDemoDealerDataSet smobilerDemoDealerDataSet;
-        private SmobilerDemoDealerDataSetTableAdapters.tblDealerTableAdapter tblDealerTableAdapter;
+        private GPS.SmobilerDemoDealerDataSet smobilerDemoDealerDataSet;
+        private GPS.SmobilerDemoDealerDataSetTableAdapters.tblDealerTableAdapter tblDealerTableAdapter;
         private Smobiler.Core.Controls.GPS gps1;
+        private Smobiler.Core.Controls.ToolbarItem MyLocation;
+        private Smobiler.Core.Controls.ToolbarItem ShowRoute;
         private Smobiler.Core.Controls.GPS gps2;
     }
 }

@@ -43,7 +43,7 @@ namespace SmobilerApplication79
             // 
             this.labelName.DataMember = "Name";
             this.labelName.DisplayMember = "Name";
-            this.labelName.FontSize = 9F;
+            this.labelName.FontSize = 7F;
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(72)))), ((int)(((byte)(90)))));
             this.labelName.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
             this.labelName.Location = new Smobiler.Core.PointS(2F, 1F);
@@ -53,6 +53,7 @@ namespace SmobilerApplication79
             // 
             // label2
             // 
+            this.label2.FontSize = 5F;
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new Smobiler.Core.PointS(43F, 5F);
             this.label2.Name = "label2";
@@ -65,6 +66,7 @@ namespace SmobilerApplication79
             // 
             this.labelPhone.DataMember = "Phone";
             this.labelPhone.DisplayMember = "Phone";
+            this.labelPhone.FontSize = 5F;
             this.labelPhone.ForeColor = System.Drawing.Color.Silver;
             this.labelPhone.Location = new Smobiler.Core.PointS(55F, 5F);
             this.labelPhone.Name = "labelPhone";
@@ -104,6 +106,7 @@ namespace SmobilerApplication79
             // 
             this.labelAddress.DataMember = "longitude";
             this.labelAddress.DisplayMember = "Address";
+            this.labelAddress.FontSize = 5F;
             this.labelAddress.ForeColor = System.Drawing.Color.Gray;
             this.labelAddress.Location = new Smobiler.Core.PointS(12F, 12F);
             this.labelAddress.Name = "labelAddress";
@@ -125,7 +128,7 @@ namespace SmobilerApplication79
             // 
             // labelNavigation
             // 
-            this.labelNavigation.FontSize = 5F;
+            this.labelNavigation.FontSize = 4F;
             this.labelNavigation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
             this.labelNavigation.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
             this.labelNavigation.Location = new Smobiler.Core.PointS(92F, 15F);
@@ -149,7 +152,7 @@ namespace SmobilerApplication79
             // 
             // labelLocation
             // 
-            this.labelLocation.FontSize = 5F;
+            this.labelLocation.FontSize = 4F;
             this.labelLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
             this.labelLocation.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
             this.labelLocation.Location = new Smobiler.Core.PointS(105F, 15F);
@@ -160,6 +163,7 @@ namespace SmobilerApplication79
             // 
             // SmobilerForm2
             // 
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.labelName,
             this.label2,
@@ -172,6 +176,7 @@ namespace SmobilerApplication79
             this.imageLocation,
             this.labelLocation});
             this.Size = new System.Drawing.Size(120, 21);
+            this.Name = "SmobilerForm2";
 
         }
         #endregion

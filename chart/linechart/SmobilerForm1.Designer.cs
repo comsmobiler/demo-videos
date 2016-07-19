@@ -66,6 +66,7 @@ namespace linechart
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.lineChart1});
             this.Load += new System.EventHandler(this.SmobilerForm1_Load);
+            this.Name = "SmobilerForm1";
             ((System.ComponentModel.ISupportInitialize)(this.smobilerChartDemoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDOMAYSalesInfoBindingSource)).EndInit();
 

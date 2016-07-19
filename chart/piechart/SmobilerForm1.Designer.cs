@@ -65,6 +65,7 @@ namespace piechart
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.pieChart1});
             this.Load += new System.EventHandler(this.SmobilerForm1_Load);
+            this.Name = "SmobilerForm1";
             ((System.ComponentModel.ISupportInitialize)(this.salesInfoTotalBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smobilerChartDemoDataSet)).EndInit();
 

@@ -51,7 +51,7 @@ namespace gridview2
             // 
             this.label1.DataMember = "TypeName";
             this.label1.DisplayMember = "TypeName";
-            this.label1.FontSize = 5F;
+            this.label1.FontSize = 4F;
             this.label1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
             this.label1.Location = new Smobiler.Core.PointS(0F, 12F);
             this.label1.Name = "label1";
@@ -134,6 +134,7 @@ namespace gridview2
             // 
             // SmobilerLayout2
             // 
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.image1,
             this.label1,
@@ -144,6 +145,7 @@ namespace gridview2
             this.textBox2,
             this.checkBox1});
             this.Size = new System.Drawing.Size(120, 20);
+            this.Name = "SmobilerLayout2";
 
         }
         #endregion

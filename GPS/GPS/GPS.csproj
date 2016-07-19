@@ -8,8 +8,8 @@
     <ProjectGuid>{541D5B7F-3735-40C8-A9D1-1967CDF3A7EA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SmobilerApplication79</RootNamespace>
-    <AssemblyName>SmobilerApplication79</AssemblyName>
+    <RootNamespace>GPS</RootNamespace>
+    <AssemblyName>GPS</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -38,8 +38,11 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Gma.QrCodeNet.Encoding" />
     <Reference Include="Smobiler.Core" />
+    <Reference Include="Smobiler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a049c84bba5d5e7a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Smobiler Designer\Library\Smobiler.Utility.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

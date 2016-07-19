@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SmobilerDemoDealerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SmobilerDemoDealerConnectionString (Settings)" PropertyReference="ApplicationSettings.SmobilerApplication79.Properties.Settings.GlobalReference.Default.SmobilerDemoDealerConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SmobilerDemoDealerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SmobilerDemoDealerConnectionString (Settings)" PropertyReference="ApplicationSettings.GPS.Properties.Settings.GlobalReference.Default.SmobilerDemoDealerConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblDealerTableAdapter" GeneratorDataComponentClassName="tblDealerTableAdapter" Name="tblDealer" UserDataComponentName="tblDealerTableAdapter">
@@ -89,7 +89,7 @@
   <xs:element name="SmobilerDemoDealerDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SmobilerDemoDealerDataSet" msprop:Generator_UserDSName="SmobilerDemoDealerDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tblDealer" msprop:Generator_TableClassName="tblDealerDataTable" msprop:Generator_TableVarName="tabletblDealer" msprop:Generator_TablePropName="tblDealer" msprop:Generator_RowDeletingName="tblDealerRowDeleting" msprop:Generator_RowChangingName="tblDealerRowChanging" msprop:Generator_RowEvHandlerName="tblDealerRowChangeEventHandler" msprop:Generator_RowDeletedName="tblDealerRowDeleted" msprop:Generator_UserTableName="tblDealer" msprop:Generator_RowChangedName="tblDealerRowChanged" msprop:Generator_RowEvArgName="tblDealerRowChangeEvent" msprop:Generator_RowClassName="tblDealerRow">
+        <xs:element name="tblDealer" msprop:Generator_TableClassName="tblDealerDataTable" msprop:Generator_TableVarName="tabletblDealer" msprop:Generator_RowChangedName="tblDealerRowChanged" msprop:Generator_TablePropName="tblDealer" msprop:Generator_RowDeletingName="tblDealerRowDeleting" msprop:Generator_RowChangingName="tblDealerRowChanging" msprop:Generator_RowEvHandlerName="tblDealerRowChangeEventHandler" msprop:Generator_RowDeletedName="tblDealerRowDeleted" msprop:Generator_RowClassName="tblDealerRow" msprop:Generator_UserTableName="tblDealer" msprop:Generator_RowEvArgName="tblDealerRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />

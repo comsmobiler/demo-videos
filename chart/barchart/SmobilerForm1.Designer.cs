@@ -30,11 +30,11 @@ namespace barchart
         {
             this.components = new System.ComponentModel.Container();
             this.barChart1 = new Smobiler.Core.Controls.BarChart();
-            this.smobilerChartDemoDataSet = new barchart.SmobilerChartDemoDataSet();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.smobilerChartDemoDataSet = new barchart.SmobilerChartDemoDataSet();
             this.tblSalesInfoTableAdapter = new barchart.SmobilerChartDemoDataSetTableAdapters.tblSalesInfoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.smobilerChartDemoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smobilerChartDemoDataSet)).BeginInit();
             // 
             // barChart1
             // 
@@ -47,15 +47,15 @@ namespace barchart
             this.barChart1.XAxisLabelMember = "Month";
             this.barChart1.YAxisValueMember = "Amount";
             // 
-            // smobilerChartDemoDataSet
-            // 
-            this.smobilerChartDemoDataSet.DataSetName = "SmobilerChartDemoDataSet";
-            this.smobilerChartDemoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // bindingSource1
             // 
             this.bindingSource1.DataMember = "tblSalesInfo";
             this.bindingSource1.DataSource = this.smobilerChartDemoDataSet;
+            // 
+            // smobilerChartDemoDataSet
+            // 
+            this.smobilerChartDemoDataSet.DataSetName = "SmobilerChartDemoDataSet";
+            this.smobilerChartDemoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblSalesInfoTableAdapter
             // 
@@ -66,8 +66,9 @@ namespace barchart
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.barChart1});
             this.Load += new System.EventHandler(this.SmobilerForm1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.smobilerChartDemoDataSet)).EndInit();
+            this.Name = "SmobilerForm1";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smobilerChartDemoDataSet)).EndInit();
 
         }
         #endregion
