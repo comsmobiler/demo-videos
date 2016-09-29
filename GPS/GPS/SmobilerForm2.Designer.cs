@@ -43,21 +43,21 @@ namespace SmobilerApplication79
             // 
             this.labelName.DataMember = "Name";
             this.labelName.DisplayMember = "Name";
-            this.labelName.FontSize = 7F;
+            this.labelName.FontSize = 14;
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(72)))), ((int)(((byte)(90)))));
             this.labelName.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.labelName.Location = new Smobiler.Core.PointS(2F, 1F);
+            this.labelName.Location = new System.Drawing.Point(4,2);
             this.labelName.Name = "labelName";
             this.labelName.TabIndex = 2;
             this.labelName.VerticalAlignment = Smobiler.Core.VerticalAlignment.Bottom;
             // 
             // label2
             // 
-            this.label2.FontSize = 5F;
+            this.label2.FontSize = 10;
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new Smobiler.Core.PointS(43F, 5F);
+            this.label2.Location = new System.Drawing.Point(86,10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.SizeF(12F, 6F);
+            this.label2.Size = new System.Drawing.Size(24,12);
             this.label2.TabIndex = 3;
             this.label2.Text = "电话：";
             this.label2.VerticalAlignment = Smobiler.Core.VerticalAlignment.Bottom;
@@ -66,11 +66,11 @@ namespace SmobilerApplication79
             // 
             this.labelPhone.DataMember = "Phone";
             this.labelPhone.DisplayMember = "Phone";
-            this.labelPhone.FontSize = 5F;
+            this.labelPhone.FontSize = 10;
             this.labelPhone.ForeColor = System.Drawing.Color.Silver;
-            this.labelPhone.Location = new Smobiler.Core.PointS(55F, 5F);
+            this.labelPhone.Location = new System.Drawing.Point(110,10);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.SizeF(22F, 6F);
+            this.labelPhone.Size = new System.Drawing.Size(44,12);
             this.labelPhone.TabIndex = 4;
             this.labelPhone.Text = "label3";
             this.labelPhone.VerticalAlignment = Smobiler.Core.VerticalAlignment.Bottom;
@@ -79,12 +79,12 @@ namespace SmobilerApplication79
             // 
             this.imagePhone.BackColor = System.Drawing.Color.LightGray;
             this.imagePhone.BorderRadius = 10;
-            this.imagePhone.FontSize = 4F;
-            this.imagePhone.Location = new Smobiler.Core.PointS(36F, 5F);
+            this.imagePhone.FontSize = 8;
+            this.imagePhone.Location = new System.Drawing.Point(72,10);
             this.imagePhone.Name = "imagePhone";
             this.imagePhone.Padding = new Smobiler.Core.Padding(1F);
             this.imagePhone.ResourceID = "Call";
-            this.imagePhone.Size = new System.Drawing.SizeF(6F, 6F);
+            this.imagePhone.Size = new System.Drawing.Size(12,12);
             this.imagePhone.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.imagePhone.TabIndex = 5;
             // 
@@ -95,9 +95,9 @@ namespace SmobilerApplication79
             this.checkBox1.Checked = false;
             this.checkBox1.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(72)))), ((int)(((byte)(73)))));
             this.checkBox1.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(78)))), ((int)(((byte)(93)))));
-            this.checkBox1.Location = new Smobiler.Core.PointS(3F, 12F);
+            this.checkBox1.Location = new System.Drawing.Point(6,24);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.SizeF(7F, 7F);
+            this.checkBox1.Size = new System.Drawing.Size(14,14);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.UnCheckedBackColor = System.Drawing.Color.LightGray;
             this.checkBox1.UnCheckedColor = System.Drawing.Color.WhiteSmoke;
@@ -106,11 +106,11 @@ namespace SmobilerApplication79
             // 
             this.labelAddress.DataMember = "longitude";
             this.labelAddress.DisplayMember = "Address";
-            this.labelAddress.FontSize = 5F;
+            this.labelAddress.FontSize = 10;
             this.labelAddress.ForeColor = System.Drawing.Color.Gray;
-            this.labelAddress.Location = new Smobiler.Core.PointS(12F, 12F);
+            this.labelAddress.Location = new System.Drawing.Point(24,24);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.SizeF(76F, 7F);
+            this.labelAddress.Size = new System.Drawing.Size(152,14);
             this.labelAddress.TabIndex = 7;
             this.labelAddress.Text = "label4";
             // 
@@ -118,22 +118,22 @@ namespace SmobilerApplication79
             // 
             this.imageNavigation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(78)))), ((int)(((byte)(93)))));
             this.imageNavigation.BorderRadius = 6;
-            this.imageNavigation.FontSize = 5F;
-            this.imageNavigation.Location = new Smobiler.Core.PointS(93F, 3F);
+            this.imageNavigation.FontSize = 10;
+            this.imageNavigation.Location = new System.Drawing.Point(186,6);
             this.imageNavigation.Name = "imageNavigation";
             this.imageNavigation.ResourceID = "route";
-            this.imageNavigation.Size = new System.Drawing.SizeF(10F, 10F);
+            this.imageNavigation.Size = new System.Drawing.Size(20,20);
             this.imageNavigation.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.imageNavigation.TabIndex = 8;
             // 
             // labelNavigation
             // 
-            this.labelNavigation.FontSize = 4F;
+            this.labelNavigation.FontSize = 8;
             this.labelNavigation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
             this.labelNavigation.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.labelNavigation.Location = new Smobiler.Core.PointS(92F, 15F);
+            this.labelNavigation.Location = new System.Drawing.Point(184,30);
             this.labelNavigation.Name = "labelNavigation";
-            this.labelNavigation.Size = new System.Drawing.SizeF(12F, 5F);
+            this.labelNavigation.Size = new System.Drawing.Size(24,10);
             this.labelNavigation.TabIndex = 9;
             this.labelNavigation.Text = "导航";
             // 
@@ -142,22 +142,22 @@ namespace SmobilerApplication79
             this.imageLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(78)))), ((int)(((byte)(93)))));
             this.imageLocation.BorderRadius = 6;
             this.imageLocation.DataMember = "latitude";
-            this.imageLocation.FontSize = 4F;
-            this.imageLocation.Location = new Smobiler.Core.PointS(106F, 3F);
+            this.imageLocation.FontSize = 8;
+            this.imageLocation.Location = new System.Drawing.Point(212,6);
             this.imageLocation.Name = "imageLocation";
             this.imageLocation.ResourceID = "Location";
-            this.imageLocation.Size = new System.Drawing.SizeF(10F, 10F);
+            this.imageLocation.Size = new System.Drawing.Size(20,20);
             this.imageLocation.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.imageLocation.TabIndex = 10;
             // 
             // labelLocation
             // 
-            this.labelLocation.FontSize = 4F;
+            this.labelLocation.FontSize = 8;
             this.labelLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(99)))), ((int)(((byte)(113)))));
             this.labelLocation.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.labelLocation.Location = new Smobiler.Core.PointS(105F, 15F);
+            this.labelLocation.Location = new System.Drawing.Point(210,30);
             this.labelLocation.Name = "labelLocation";
-            this.labelLocation.Size = new System.Drawing.SizeF(12F, 5F);
+            this.labelLocation.Size = new System.Drawing.Size(24,10);
             this.labelLocation.TabIndex = 11;
             this.labelLocation.Text = "位置";
             // 
@@ -175,7 +175,7 @@ namespace SmobilerApplication79
             this.labelNavigation,
             this.imageLocation,
             this.labelLocation});
-            this.Size = new System.Drawing.Size(120, 21);
+            this.Size = new System.Drawing.Size(240,42);
             this.Name = "SmobilerForm2";
 
         }

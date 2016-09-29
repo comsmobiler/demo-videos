@@ -53,10 +53,10 @@ namespace linechart
             // lineChart1
             // 
             this.lineChart1.DataSource = this.tblDOMAYSalesInfoBindingSource;
-            this.lineChart1.Location = new Smobiler.Core.PointS(3F, 4F);
+            this.lineChart1.Location = new System.Drawing.Point(6, 8);
             this.lineChart1.Name = "lineChart1";
             this.lineChart1.SeriesMember = "Customer";
-            this.lineChart1.Size = new System.Drawing.SizeF(114F, 107F);
+            this.lineChart1.Size = new System.Drawing.Size(228, 214);
             this.lineChart1.TabIndex = 2;
             this.lineChart1.XAxisLabelMember = "Month";
             this.lineChart1.YAxisValueMember = "Amount";

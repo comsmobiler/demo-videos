@@ -39,10 +39,10 @@ namespace bubblechart
             // bubbleChart1
             // 
             this.bubbleChart1.DataSource = this.tblProfitInfoBindingSource;
-            this.bubbleChart1.Location = new Smobiler.Core.PointS(5F, 10F);
+            this.bubbleChart1.Location = new System.Drawing.Point(10, 20);
             this.bubbleChart1.Name = "bubbleChart1";
             this.bubbleChart1.SeriesMember = "Customer";
-            this.bubbleChart1.Size = new System.Drawing.SizeF(108F, 102F);
+            this.bubbleChart1.Size = new System.Drawing.Size(216, 204);
             this.bubbleChart1.TabIndex = 2;
             this.bubbleChart1.XAxisLabelMember = "Year";
             this.bubbleChart1.YAxisValueMember = "Amount";

@@ -39,10 +39,12 @@ namespace barchart
             // barChart1
             // 
             this.barChart1.DataSource = this.bindingSource1;
-            this.barChart1.Location = new Smobiler.Core.PointS(3F, 4F);
+            this.barChart1.DefaultColors.Add(System.Drawing.Color.Red);
+            this.barChart1.DefaultColors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0))))));
+            this.barChart1.Location = new System.Drawing.Point(6, 8);
             this.barChart1.Name = "barChart1";
             this.barChart1.SeriesMember = "Customer";
-            this.barChart1.Size = new System.Drawing.SizeF(115F, 98F);
+            this.barChart1.Size = new System.Drawing.Size(230, 196);
             this.barChart1.TabIndex = 2;
             this.barChart1.XAxisLabelMember = "Month";
             this.barChart1.YAxisValueMember = "Amount";

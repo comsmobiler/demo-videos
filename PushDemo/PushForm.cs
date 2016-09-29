@@ -74,7 +74,9 @@ namespace SmobilerUtilityDemo
             APIMessageResult result;
             //调用Push方法推送到设备
             if (System.String.IsNullOrEmpty(deviceid) == true)
+            {
                 result = client.Push(pushContent, tokenstr);
+            }
             else
             {
                 string[] devices = deviceid.Split(',');//推送设备号
@@ -119,6 +121,138 @@ namespace SmobilerUtilityDemo
                      this.lblresult.Text = "请输入SecurityKey！";
                  }
              }
+        }
+        /// <summary>
+        /// 推送
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnURL_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            string ServiceKey = this.txtServiceKey.Text;//获取推送key
+            string SecurityKey = this.txtSecurityKey.Text;//获取推送安全key
+            if ((System.String.IsNullOrEmpty(ServiceKey) == false) && (System.String.IsNullOrEmpty(SecurityKey) == false))
+            {
+                Smobiler.Utility.API.PushClient client = new Smobiler.Utility.API.PushClient(ServiceKey, SecurityKey);
+                string deviceid = this.txtDevice.Text;//获取推送设备号
+                string pushContent = this.txtpushContent.Text;//获取推送内容
+                string url = this.txtUrl .Text;
+                APIMessageResult result;
+               
+                    //调用Push方法推送到设备
+                    if (System.String.IsNullOrEmpty(deviceid) == true)
+                    {
+                        result = client.PushURL(pushContent, url, PushPlatform.all, tokenstr);
+                    }
+                    else
+                    {
+                        string[] devices = deviceid.Split(',');//推送设备号
+                        if (devices.Length == 1)
+                        {
+                            result = client.PushURL(deviceid, pushContent, url, tokenstr);
+                        }
+                        else
+                        {
+                            result = client.PushURL(devices, pushContent, url, PushPlatform.android, tokenstr);
+                        }
+                    }
+               
+                if (result is PushMessageResult)
+                {
+                    if (result.status != 0)
+                        sb.AppendLine("Error: " + result.error);
+                    else
+                        sb.AppendLine("Result: " + result.ToString());
+                }
+                else if (result is PushBatchMessageResult)
+                {
+                    foreach (KeyValuePair<string, PushMessageResult> item in ((PushBatchMessageResult)result).results)
+                    {
+                        sb.Append(item.Key + ":");
+                        if (item.Value.status == 0)
+                            sb.AppendLine("Result: " + result.ToString());
+                        else
+                            sb.AppendLine("Error: " + result.error);
+                    }
+                }
+                this.lblresult.Text = sb.ToString();
+            } 
+            else
+            {
+                if (System.String.IsNullOrEmpty(ServiceKey) == true)
+                {
+                    this.lblresult.Text = "请输入ServiceKey！";
+                }
+                if (System.String.IsNullOrEmpty(SecurityKey) == true)
+                {
+                    this.lblresult.Text = "请输入SecurityKey！";
+                }
+            }
+        }
+
+        private void btnClientCallBack_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            string ServiceKey = this.txtServiceKey.Text;//获取推送key
+            string SecurityKey = this.txtSecurityKey.Text;//获取推送安全key
+            if ((System.String.IsNullOrEmpty(ServiceKey) == false) && (System.String.IsNullOrEmpty(SecurityKey) == false))
+            {
+                Smobiler.Utility.API.PushClient client = new Smobiler.Utility.API.PushClient(ServiceKey, SecurityKey);
+                string deviceid = this.txtDevice.Text;//获取推送设备号
+                string pushContent = this.txtpushContent.Text;//获取推送内容
+                string paramsstr = this.txtParams.Text;
+                APIMessageResult result;
+                //调用Push方法推送到设备
+                if (System.String.IsNullOrEmpty(deviceid) == true)
+                {
+                    result = client.PushClientCallBack(pushContent, paramsstr, PushPlatform.all, tokenstr);
+                }
+                else
+                {
+                    string[] devices = deviceid.Split(',');//推送设备号
+                    if (devices.Length == 1)
+                    {
+                       
+                        result = client.PushClientCallBack(deviceid, pushContent, paramsstr, tokenstr);
+                    }
+                    else
+                    {
+                        result = client.PushClientCallBack(devices, pushContent, paramsstr, PushPlatform.ios, tokenstr);
+                    }
+                }
+
+                if (result is PushMessageResult)
+                {
+                    if (result.status != 0)
+                        sb.AppendLine("Error: " + result.error);
+                    else
+                        sb.AppendLine("Result: " + result.ToString());
+                }
+                else if (result is PushBatchMessageResult)
+                {
+                    foreach (KeyValuePair<string, PushMessageResult> item in ((PushBatchMessageResult)result).results)
+                    {
+                        sb.Append(item.Key + ":");
+                        if (item.Value.status == 0)
+                            sb.AppendLine("Result: " + result.ToString());
+                        else
+                            sb.AppendLine("Error: " + result.error);
+                    }
+                }
+                this.lblresult.Text = sb.ToString();
+            }
+            else
+            {
+                if (System.String.IsNullOrEmpty(ServiceKey) == true)
+                {
+                    this.lblresult.Text = "请输入ServiceKey！";
+                }
+                if (System.String.IsNullOrEmpty(SecurityKey) == true)
+                {
+                    this.lblresult.Text = "请输入SecurityKey！";
+                }
+            }
         }
     }
 }

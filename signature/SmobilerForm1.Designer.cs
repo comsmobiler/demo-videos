@@ -33,13 +33,13 @@ namespace signature
             // 
             // signatureButton1
             // 
-            this.signatureButton1.FontSize = 4F;
-            this.signatureButton1.Location = new Smobiler.Core.PointS(49F, 9F);
+            this.signatureButton1.FontSize = 8;
+            this.signatureButton1.Location = new System.Drawing.Point(98,18);
             this.signatureButton1.Name = "signatureButton1";
             this.signatureButton1.ResourceID = "Signaturebutton";
             this.signatureButton1.SignatureBackColor = System.Drawing.Color.Black;
             this.signatureButton1.SignatureForeColor = System.Drawing.Color.Aqua;
-            this.signatureButton1.Size = new System.Drawing.SizeF(21F, 21F);
+            this.signatureButton1.Size = new System.Drawing.Size(42,42);
             this.signatureButton1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.signatureButton1.TabIndex = 2;
             this.signatureButton1.SignatureCompleted += new Smobiler.Core.SignatureCompletedCallBackHandler(this.signatureButton1_SignatureCompleted);
@@ -49,9 +49,9 @@ namespace signature
             this.image1.BackColor = System.Drawing.Color.Black;
             this.image1.BorderRadius = 3;
             this.image1.DefaultImageVisible = false;
-            this.image1.Location = new Smobiler.Core.PointS(4F, 34F);
+            this.image1.Location = new System.Drawing.Point(8,68);
             this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.SizeF(112F, 57F);
+            this.image1.Size = new System.Drawing.Size(224,114);
             this.image1.TabIndex = 3;
             // 
             // SmobilerForm1

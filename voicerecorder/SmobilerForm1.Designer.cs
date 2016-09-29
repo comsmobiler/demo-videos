@@ -33,11 +33,11 @@ namespace voicerecorder
             // 
             // voiceRecorderButton1
             // 
-            this.voiceRecorderButton1.FontSize = 8F;
-            this.voiceRecorderButton1.Location = new Smobiler.Core.PointS(14F, 59F);
+            this.voiceRecorderButton1.FontSize = 16;
+            this.voiceRecorderButton1.Location = new System.Drawing.Point(28,118);
             this.voiceRecorderButton1.Name = "voiceRecorderButton1";
             this.voiceRecorderButton1.ResourceID = "record";
-            this.voiceRecorderButton1.Size = new System.Drawing.SizeF(40F, 40F);
+            this.voiceRecorderButton1.Size = new System.Drawing.Size(80,80);
             this.voiceRecorderButton1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.voiceRecorderButton1.TabIndex = 9;
             this.voiceRecorderButton1.Text = "录音";
@@ -45,11 +45,11 @@ namespace voicerecorder
             // 
             // imageButton1
             // 
-            this.imageButton1.FontSize = 8F;
-            this.imageButton1.Location = new Smobiler.Core.PointS(62F, 59F);
+            this.imageButton1.FontSize = 16;
+            this.imageButton1.Location = new System.Drawing.Point(124,118);
             this.imageButton1.Name = "imageButton1";
             this.imageButton1.ResourceID = "play";
-            this.imageButton1.Size = new System.Drawing.SizeF(40F, 40F);
+            this.imageButton1.Size = new System.Drawing.Size(80,80);
             this.imageButton1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.imageButton1.TabIndex = 10;
             this.imageButton1.Text = "播放";

@@ -33,10 +33,10 @@ namespace barcode
             // 
             // barcodeButton1
             // 
-            this.barcodeButton1.FontSize = 4F;
-            this.barcodeButton1.Location = new Smobiler.Core.PointS(3F, 6F);
+            this.barcodeButton1.FontSize = 8;
+            this.barcodeButton1.Location = new System.Drawing.Point(6,12);
             this.barcodeButton1.Name = "barcodeButton1";
-            this.barcodeButton1.Size = new System.Drawing.SizeF(19F, 20F);
+            this.barcodeButton1.Size = new System.Drawing.Size(38,40);
             this.barcodeButton1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.barcodeButton1.TabIndex = 2;
             this.barcodeButton1.BarcodeScanned += new Smobiler.Core.BarcodeScannerCallBackHandler(this.barcodeButton1_BarcodeScanned);
@@ -45,9 +45,9 @@ namespace barcode
             // 
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new Smobiler.Core.PointS(28F, 7F);
+            this.label1.Location = new System.Drawing.Point(56,14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.SizeF(85F, 18F);
+            this.label1.Size = new System.Drawing.Size(170,36);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 

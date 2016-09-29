@@ -39,9 +39,9 @@ namespace piechart
             // pieChart1
             // 
             this.pieChart1.DataSource = this.salesInfoTotalBindingSource;
-            this.pieChart1.Location = new Smobiler.Core.PointS(5F, 6F);
+            this.pieChart1.Location = new System.Drawing.Point(10, 12);
             this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.SizeF(108F, 104F);
+            this.pieChart1.Size = new System.Drawing.Size(216, 208);
             this.pieChart1.TabIndex = 2;
             this.pieChart1.XAxisLabelMember = "Customer";
             this.pieChart1.YAxisValueMember = "AmountTotal";

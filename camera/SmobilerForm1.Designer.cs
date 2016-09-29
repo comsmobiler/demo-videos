@@ -33,20 +33,20 @@ namespace camera
             // 
             // cameraButton1
             // 
-            this.cameraButton1.FontSize = 4F;
-            this.cameraButton1.Location = new Smobiler.Core.PointS(75F, 45F);
+            this.cameraButton1.FontSize = 8;
+            this.cameraButton1.Location = new System.Drawing.Point(150,90);
             this.cameraButton1.Name = "cameraButton1";
             this.cameraButton1.ResourceID = "Camera";
-            this.cameraButton1.Size = new System.Drawing.SizeF(40F, 30F);
+            this.cameraButton1.Size = new System.Drawing.Size(80,60);
             this.cameraButton1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.cameraButton1.TabIndex = 2;
             this.cameraButton1.ImageCaptured += new Smobiler.Core.CameraOnlineCallBackHandler(this.cameraButton1_ImageCaptured);
             // 
             // image1
             // 
-            this.image1.Location = new Smobiler.Core.PointS(4F, 30F);
+            this.image1.Location = new System.Drawing.Point(8,60);
             this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.SizeF(67F, 120F);
+            this.image1.Size = new System.Drawing.Size(134,240);
             this.image1.TabIndex = 3;
             // 
             // SmobilerForm1

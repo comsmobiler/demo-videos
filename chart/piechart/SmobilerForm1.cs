@@ -13,6 +13,7 @@ namespace piechart
         {
             this.salesInfoTotalTableAdapter.Fill(smobilerChartDemoDataSet.SalesInfoTotal);
             this.pieChart1.DataBind();
+            pieChart1.CenterText = "ฯ๚สÛถ๎500ิช";
         }
     }
 }

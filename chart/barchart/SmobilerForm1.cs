@@ -13,6 +13,7 @@ namespace barchart
         {
             this.tblSalesInfoTableAdapter.Fill(smobilerChartDemoDataSet.tblSalesInfo);
             this.barChart1.DataBind();
+            barChart1.Cent
         }
     }
 }

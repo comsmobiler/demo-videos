@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-         
-            this.SuspendLayout();
             this.btntoken = new System.Windows.Forms.Button();
             this.txtpushContent = new System.Windows.Forms.TextBox();
             this.btnPush = new System.Windows.Forms.Button();
@@ -43,11 +41,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-
+            this.btnClientCallBack = new System.Windows.Forms.Button();
+            this.btnURL = new System.Windows.Forms.Button();
+            this.txtParams = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUrl = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // btntoken
             // 
-            this.btntoken.Location = new System.Drawing.Point(234, 178);
+            this.btntoken.Location = new System.Drawing.Point(232, 178);
             this.btntoken.Name = "btntoken";
             this.btntoken.Size = new System.Drawing.Size(75, 23);
             this.btntoken.TabIndex = 7;
@@ -104,12 +108,12 @@
             // 
             // lblresult
             // 
-            this.lblresult.Location = new System.Drawing.Point(14, 230);
+            this.lblresult.Location = new System.Drawing.Point(14, 343);
             this.lblresult.Multiline = true;
             this.lblresult.Name = "lblresult";
             this.lblresult.ReadOnly = true;
             this.lblresult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.lblresult.Size = new System.Drawing.Size(295, 253);
+            this.lblresult.Size = new System.Drawing.Size(295, 215);
             this.lblresult.TabIndex = 11;
             // 
             // label2
@@ -157,11 +161,69 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "说明：先点击Token获取，输入推送内容，设备号为空时代表推送所有，支持多设备推送，中间加英文的逗号隔开";
             // 
+            // btnClientCallBack
+            // 
+            this.btnClientCallBack.Location = new System.Drawing.Point(189, 314);
+            this.btnClientCallBack.Name = "btnClientCallBack";
+            this.btnClientCallBack.Size = new System.Drawing.Size(118, 23);
+            this.btnClientCallBack.TabIndex = 18;
+            this.btnClientCallBack.Text = "ClientCallBack";
+            this.btnClientCallBack.UseVisualStyleBackColor = true;
+            this.btnClientCallBack.Click += new System.EventHandler(this.btnClientCallBack_Click);
+            // 
+            // btnURL
+            // 
+            this.btnURL.Location = new System.Drawing.Point(232, 257);
+            this.btnURL.Name = "btnURL";
+            this.btnURL.Size = new System.Drawing.Size(75, 23);
+            this.btnURL.TabIndex = 19;
+            this.btnURL.Text = "btnPushURL";
+            this.btnURL.UseVisualStyleBackColor = true;
+            this.btnURL.Click += new System.EventHandler(this.btnURL_Click);
+            // 
+            // txtParams
+            // 
+            this.txtParams.Location = new System.Drawing.Point(90, 287);
+            this.txtParams.Name = "txtParams";
+            this.txtParams.Size = new System.Drawing.Size(219, 21);
+            this.txtParams.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 287);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 12);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Params";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 12);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Url";
+            // 
+            // txtUrl
+            // 
+            this.txtUrl.Location = new System.Drawing.Point(90, 230);
+            this.txtUrl.Name = "txtUrl";
+            this.txtUrl.Size = new System.Drawing.Size(219, 21);
+            this.txtUrl.TabIndex = 21;
+            // 
             // PushForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 511);
+            this.ClientSize = new System.Drawing.Size(333, 584);
+            this.Controls.Add(this.txtUrl);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnClientCallBack);
+            this.Controls.Add(this.btnURL);
+            this.Controls.Add(this.txtParams);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -196,5 +258,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnClientCallBack;
+        private System.Windows.Forms.Button btnURL;
+        private System.Windows.Forms.TextBox txtParams;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUrl;
     }
 }

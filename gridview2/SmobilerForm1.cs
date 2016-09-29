@@ -30,16 +30,22 @@ namespace gridview2
         {
             decimal totalamount = 0;
 
-            foreach(GridViewRow item in gridView1.Rows)
+            foreach (GridViewRow item in gridView1.Rows)
             {
                 bool bo = Convert.ToBoolean(item.Cell.Items["checkBox1"].DefaultValue);
-                if (bo==true)
+                if (bo == true)
                 {
                     string str = Convert.ToString(item.Cell.Items["textBox1"].DefaultValue);
                     totalamount = totalamount + Convert.ToDecimal(str);
                 }
             }
             label2.Text = totalamount.ToString();
+            contextMenu1.Show();
+        }
+
+        private void gridView1_CellLongClick(object sender, GridViewCellEventArgs e)
+        {
+            contextMenu1.Show();
         }
     }
 }

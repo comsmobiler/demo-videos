@@ -41,7 +41,7 @@ namespace gridview1
             this.gridView1.DataSource = this.tblDataBindingSource;
             this.gridView1.Layout = "SmobilerLayout1";
             this.gridView1.Name = "gridView1";
-            this.gridView1.Size = new System.Drawing.SizeF(120F, 200F);
+            this.gridView1.Size = new System.Drawing.Size(240, 400);
             this.gridView1.TabIndex = 2;
             // 
             // tblDataBindingSource
