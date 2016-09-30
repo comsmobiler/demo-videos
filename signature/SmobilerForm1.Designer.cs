@@ -56,6 +56,7 @@ namespace signature
             // 
             // SmobilerForm1
             // 
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.signatureButton1,
             this.image1});

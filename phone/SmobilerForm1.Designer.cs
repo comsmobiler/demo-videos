@@ -106,6 +106,7 @@ namespace phone
             // 
             // SmobilerForm1
             // 
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.phoneButton1,
             this.label1,
